@@ -1,0 +1,1225 @@
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<title>Taffae Family Foundation</title>
+		<style type="text/css">
+			html {
+			scroll-behavior: smooth;
+			}
+			body {
+			font-family: 'Raleway', sans-serif;
+			}
+			.container {
+			max-width: 1250px;
+			}
+			.img-container {
+			padding-top: 100%;
+			position: relative;
+			}
+			.img-container .img {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			}
+			.flex-box {
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+			justify-content: center;
+			}
+			.flex-box .flex-item {
+			}
+			.nav-item.dropdown-menu-right .dropdown-menu {
+			right: 0;
+			left: auto;
+			}
+			#banner {
+			height: 90vh;
+			position: relative;
+			background-image: url( './images/group.jpg' );
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: top center;
+			}
+			#banner .banner-item {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			/* top: 50%; */
+			/* transform: translateY(-50%); */
+			color: #fff;
+			bottom: 118px;
+			}
+			#banner .banner-item h1 {
+			font-size: 55px;
+			margin-bottom: 0.9rem;
+			font-weight: 600;
+			}
+			#banner .banner-item p {
+			font-size: 22px;
+			margin: 0 auto;
+			max-width: 918px;
+			font-weight: 500;
+			}
+			#banner::before {
+			content: '';
+			background: -moz-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.5600000000000001) 100%);
+			background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.5600000000000001) 100%);
+			background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.5600000000000001) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#99000000',GradientType=0);
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 50%;
+			position: absolute;
+			width: 100%;
+			}
+			#main-header #logo-light,
+			#main-header #logo-dark {
+			position: absolute;
+			transform: translate(-50%,-50%);
+			top: 50%;
+			left: 50%;
+			}
+			#five-items {
+			position: relative;
+			}
+			#five-items::after {
+			top: -145px;
+			content: "";
+			display: inline-block;
+			height: 145px;
+			left: 50%;
+			margin-left: -105.5px;
+			position: absolute;
+			vertical-align: top;
+			width: 215px;
+			z-index: 10;
+			}
+			#five-items .flex-item {
+			width: 25%;
+			}
+			#five-items .five-item {
+			padding-top: 25vh;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			background-color: #005794;
+			cursor: pointer;
+			}
+			#five-items .five-item::before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background-color: rgba(0,87,148,0.4);
+			transition: 1s all;
+			}
+			#five-items .five-item:hover::before {
+			background-color: rgba(0,87,148,0);
+			}
+			#five-items .five-item h3 {
+			position: absolute;
+			margin: 0px auto;
+			text-align: center;
+			left: 0px;
+			right: 0px;
+			top: 45%;
+			/* transform: translateY(-50%); */
+			padding: 0px 20px;
+			}
+			#five-items .five-item h3 a {
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 22px;
+			line-height: 1.18em;
+			font-weight: 700;
+			}
+			#five-items .five-item:hover h3 a {
+			text-decoration: underline;
+			}
+			#five-items .flex-item:nth-child(3) .five-item::after {
+			display: block;
+			content: ' ';
+			background-repeat: no-repeat;
+			height: 290px;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			left: calc((100% - 214px) / 2);
+			width: 214px;
+			z-index: 99;
+			}
+			#news {
+			margin-bottom: 20px;
+			}
+			#news h3 {
+			color: #005794;
+			font-size: 35px;
+			padding-top: 65px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-weight: 600;
+			}
+			#news h2 {
+			color: #005794;
+			font-size: 18px;
+			text-align: center;
+			font-weight: 600;
+			}
+			#news .flex-item {
+			width: calc(33% - 20px);
+			margin: 10px;
+			box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			padding: 30px 30px 45px;
+			position: relative;
+			}
+			#news .new {
+			padding-bottom: 15px;
+			}
+			#news .new p {
+			color: #4a4a4a;
+			font-family: "ralewaysemibold",Verdana,"Lucida Grande",Helvetica,sans-serif;
+			font-size: 22px;
+			line-height: 26.4px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-weight: 500;
+			}
+			#news .new a {
+			display: block;
+			position: absolute;
+			bottom: 30px;
+			color: #aaa;
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: 500;
+			}
+			#foundation h3 {
+			font-size: 42px;
+			line-height: 48.72px;
+			margin-top: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 25px;
+			margin-top: 65px;
+			text-align: center;
+			}
+			#foundation h3 span {
+			color: #005794;
+			}
+			#foundation .flex-item {
+			width: calc(33% - 20px);
+			margin: 10px;
+			box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
+			position: relative;
+			}
+			#foundation .foundation .content {
+			padding: 25px 20px 35px;
+			}
+			#foundation .foundation h3 {
+			text-align: center;
+			margin: 0px auto;
+			color: #005794;
+			line-height:31.2px;
+			font-size: 26px;
+			}
+			#foundation .foundation h3.sub-head {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			color: #000 !important;
+			}
+			#foundation .foundation p {
+			margin: 10px 5px 15px 20px;
+			font-size: 21px;
+			font-style: italic;
+			line-height: 25.2px;
+			font-weight: 500;
+			padding-left: 50pt;
+			padding-right: 50pt;
+			}
+			#foundation .imagesize img {
+			height: 280px;
+			width: 199px;
+			}
+			#foundation .imagesize2 img {
+			height: 235px;
+			width: 347px;
+			}
+			#foundation .imagesize figure {
+			width: 18%;
+			float: left;
+			text-align: center;
+			font-style: italic;
+			font-size: smaller;
+			text-indent: 0;
+			border: thin silver solid;
+			margin: 0.8em;
+			padding: 0.8em;
+			}
+			#foundation .imagesize2 figure {
+			float: right;
+			width: 30%;
+			text-align: center;
+			font-style: italic;
+			font-size: smaller;
+			text-indent: 0;
+			border: thin silver solid;
+			margin: 0.5em;
+			padding: 0.5em;
+			}
+			#foundation .imagesize3 figure {
+			float: left;
+			width: 15%;
+			text-align: center;
+			font-style: bold;
+			font-size: smaller;
+			text-indent: 0;
+			border: thin silver solid;
+			margin: 0.8em;
+			padding: 0.8em;
+			}
+			#foundation .imagesize4 figure {
+			float: right;
+			width: 18%;
+			text-align: center;
+			font-style: bold;
+			font-size: smaller;
+			text-indent: 0;
+			border: thin silver solid;
+			margin: 0.5em;
+			padding: 0.5em;
+			}
+			#foundation .imagesize5 figure {
+			float: left;
+			width: 25%;
+			text-align: center;
+			font-style: bold;
+			font-size: smaller;
+			text-indent: 0;
+			border: thin silver solid;
+			margin: 0px 75px;
+			padding: 0.5em;
+			}
+			#trustees h3 {
+			font-size: 42px;
+			line-height: 48.72px;
+			margin-top: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 25px;
+			margin-top: 65px;
+			text-align: center;
+			}
+			#objective h3 {
+			font-size: 42px;
+			line-height: 48.72px;
+			margin-top: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 25px;
+			margin-top: 65px;
+			text-align: center;
+			}
+			#trustees h2  {
+			font-size: 10px;
+			font-weight: 600;
+			font-style: bold;
+			}
+			#how-to-give {
+			background-size: cover;
+			color: #FFF;
+			padding-top: 140px;
+			padding-bottom: 83px;
+			text-align: center;
+			position: relative;
+			z-index: 10;
+			}
+			#how-to-give::before {
+			content: '';
+			height: 290px;
+			position: absolute;
+			width: 214px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			top: -145px;
+			z-index: 5;
+			}
+			#how-to-give h3 {
+			font-size: 42px;
+			line-height: 50px;
+			margin-bottom: 23px;
+			margin-top: -45px;
+			position: relative;
+			text-align: center;
+			z-index: 50;
+			}
+			#how-to-give .give-item {
+			background: rgba(100,138,59,0.3);
+			box-sizing: border-box;
+			padding-top: 45px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 75px;
+			height: calc( 100% - 30px );
+			margin: 15px auto;
+			}
+			#how-to-give .give-item .flex-item {
+			text-align: left !important
+			}
+			#how-to-give .give-item .flex-item:first-child {
+			width: 124px;
+			}
+			#how-to-give .give-item .flex-item:last-child {
+			width: calc( 100% - 124px );
+			margin-left: 20px;
+			margin-top: 15px;
+			}
+			#how-to-give .give-item img {
+			width: 124px !important;
+			height: auto !important;
+			}
+			#how-to-give .give-item h3 {
+			text-align: left !important;
+			margin: 0px auto 10px;
+			font-size: 36px;
+			line-height: 38px;
+			font-weight: 600;
+			}
+			#how-to-give .give-item h3 a {
+			color: #fff;
+			font-size: 36px;
+			line-height: 38px;
+			}
+			#how-to-give .give-item p {
+			text-align: left !important;
+			font-size: 20px;
+			line-height: 28px;
+			font-weight: 600;
+			}
+			#stories {
+			margin-top: 200px;
+			margin-bottom: 200px;
+			}
+			#stories .container > h3 {
+			color: #74b243;
+			font-family: 'ralewaysemibold',Verdana,"Lucida Grande",Helvetica,sans-serif;
+			font-size: 42px !important;
+			line-height: 48.72px;
+			margin-top: 15px;
+			margin-bottom: 1.6rem;
+			text-align: center;
+			font-weight: 500;
+			}
+			#stories .tab-pane p {
+			max-width: 85%;
+			margin: 0 auto;
+			font-size: 38px;
+			line-height: 47.88px;
+			font-style: italic;
+			margin-bottom: 13px;
+			}
+			#stories .tab-pane p::before {
+			content: '';
+			width: 54px;
+			height: 42px;
+			display: inline-block;
+			margin-right: 10px;
+			}
+			#stories .tab-pane p::after {
+			content: '';
+			width: 54px;
+			height: 42px;
+			display: inline-block;
+			margin-left: 10px;
+			position: relative;
+			z-index: -1;
+			}
+			#stories .tab-pane h4 {
+			color: #95b6a9;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 600;
+			margin: 0px auto;
+			}
+			#stories .tab-pane h3 {
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 600;
+			}
+			#stories .tab-pane h2 a {
+			color: #74b243;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: uppercase;
+			font-weight: 600;
+			}
+			#stories .nav-pills {
+			text-align: center;
+			display: inline-block;
+			margin-top: 25px;
+			}
+			#stories .nav-pills .nav-item {
+			display: inline-block;
+			}
+			#stories .nav-pills .nav-item a {
+			background-color: rgb(238, 238, 238);
+			color: #9B9B9B;
+			font-size: 16px;
+			padding: 17px 40px;
+			text-transform: uppercase;
+			font-weight: 600;
+			border-radius: 0px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			}
+			#stories .nav-pills .nav-item:hover a {
+			background-color: #ddd;
+			}
+			#stories .nav-pills .nav-item a.active {
+			color: #fff;
+			background: #95b6a9;
+			}
+			#stories .nav-pills .nav-item:first-child a {
+			border-top-left-radius: 50px !important;
+			border-bottom-left-radius: 50px !important;
+			}
+			#stories .nav-pills .nav-item:last-child a {
+			border-top-right-radius: 50px !important;
+			border-bottom-right-radius: 50px !important;
+			}
+			#stories .stories p {
+			margin: 10px 5px 15px 20px;
+			font-size: 21px;
+			font-style: italic;
+			line-height: 25.2px;
+			font-weight: 500;
+			padding-left: 50pt;
+			padding-right: 50pt;
+			}
+			#objective .objective p {
+			margin: 10px 5px 15px 20px;
+			font-size: 21px;
+			font-style: italic;
+			line-height: 25.2px;
+			font-weight: 500;
+			padding-left: 50pt;
+			padding-right: 50pt;
+			}
+			#objective {
+			margin-bottom: 200px;
+			}
+			footer {
+			background-color: #38b6ff;
+			color: #fff;
+			position: relative;
+			padding: 40px 20px 15px;
+			margin-top: 230px;
+			}
+			footer p {
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 600;
+			margin: 0px auto;
+			}
+			footer a {
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 600;
+			margin: 0px auto;
+			color: #fff;
+			}
+			footer a:hover {
+			color: #fff;
+			text-decoration: underline;
+			}
+			footer ul {
+			list-style: none;
+			margin: 0px auto;
+			padding: 0px;
+			margin: 43px auto 57.5px;
+			}
+			footer ul li a {
+			font-size: 23px !important;
+			line-height: 34.5px !important;
+			}
+			footer .logo-text {
+			margin: 0px auto !important;
+			}
+			footer .logo-text a {
+			font-size: 14px !important;
+			line-height: 21px !important;
+			text-transform: uppercase !important;
+			}
+			footer #sub-footer {
+			margin-top: 20px;
+			margin-left: -20px;
+			margin-right: -20px;
+			margin-bottom: -15px;
+			color: #ABC4D7;
+			background: #004e88;
+			padding: 30px 40px;
+			}
+			footer #sub-footer a,
+			footer #sub-footer p {
+			font-size: 14px !important;
+			line-height: 21px !important;
+			color: #ABC4D7 !important;
+			}
+			header .navbar-nav .nav-link {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 700;
+			font-size: 21px;
+			text-transform: uppercase;
+			transition: all 2s;
+			color: #38b6ff !important;
+			margin: 0px 7.5px;
+			}
+			header #logo-dark {
+			display: none;
+			}
+			header.active #logo-dark {
+			display: block;
+			}
+			header.active #logo-light {
+			display: none;
+			}
+			header.active .navbar-nav .nav-link {
+			color: #fff !important;
+			}
+			header {
+			transition: all 1.5s;
+			}
+			header.active {
+			background: #38b6ff;
+			}
+			header .navbar-nav .nav-link:hover,
+			header .navbar-nav .nav-item.dropdown.show .nav-link {
+			color: #f4c812 !important;
+			text-decoration: underline;
+			}
+			header .dropdown-toggle::after {
+			display: none !important;
+			}
+			header .dropdown-menu {
+			border: 0px !important;
+			border-radius: 0px !important;
+			-webkit-border-radius: 0px !important;
+			-moz-border-radius: 0px !important;
+			border-top: 4px solid #74B243 !important;
+			margin-top: 15px;
+			padding: 0px !important;
+			background: transparent !important;
+			}
+			header .dropdown-menu::after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 17px solid #74B243;
+			left: 20px;
+			position: absolute;
+			top: -19px;
+			}
+			header .dropdown-menu-right .dropdown-menu::after {
+			left: auto;
+			right: 20px;
+			}
+			header .dropdown-menu .dropdown-item {
+			background: #004e88 !important;
+			padding: 15px 20px;
+			opacity: .85;
+			transition: all 1s;
+			color: #FFF !important;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 700 !important;
+			font-size: 18px;
+			font-weight: normal;
+			text-transform: uppercase;
+			transition: all 1s;
+			}
+			header .dropdown-menu .dropdown-item:hover,
+			header .dropdown-menu .dropdown-item:active,
+			header .dropdown-menu .dropdown-item:focus {
+			opacity: 1 !important;
+			}
+			header .navbar {
+			padding: 40px 20px;
+			}
+			#sub-header {
+			padding: 10px 20px;
+			}
+			#sub-header .nav-link {
+			color: #4A4A4A !important;
+			font-size: 13px;
+			line-height: 19.5px;
+			}
+			#sub-header .dropdown-toggle::after {
+			display: inline-block !important;
+			}
+			header.active #sub-header {
+			background-color: rgba(0,0,0,.2);
+			margin-left: -15px;
+			margin-right: -15px;
+			}
+			header.active #sub-header .nav-link {
+			color: #fff !important;
+			}
+			header .navbar-light .navbar-toggler {
+			border-color: #005794 !important;
+			}
+			header.active .navbar-light .navbar-toggler {
+			border-color: #fff !important;
+			}
+			@media screen and ( max-width: 1366px ) {
+			#banner {
+			height: 80vh;
+			}
+			#five-items .five-item {
+			padding-top: 20vh;
+			}
+			}
+			@media screen and (max-width: 1199px) {
+			footer * {
+			text-align: center !important;
+			}
+			footer .diamond-image {
+			margin-bottom: 13px;
+			position: absolute;
+			left: calc( 50% - 107px );
+			text-align: center;
+			margin-top: -225px;
+			}
+			footer .title {
+			transform: scale(0.9);
+			margin-top: -50px;
+			margin-bottom: 25px;
+			}
+			footer #sub-footer p {
+			margin-bottom: 25px;
+			}
+			}
+			@media screen and (max-width: 991px) {
+			header .dropdown-menu::after {
+			display: none !important;
+			}
+			}
+			@media screen and (max-width: 960px) {
+			#five-items .flex-box {
+			flex-wrap: wrap;
+			}
+			#five-items .flex-item {
+			width: 50%;
+			}
+			#five-items .flex-item:nth-child(3) {
+			width: 100%;
+			}
+			#five-items .flex-item:nth-child(3) .five-item::after {
+			display: none;
+			}
+			}
+			@media screen and (max-width: 767px) {
+			#five-items .five-item {
+			background-image: none !important;
+			padding-top: 10vh;
+			}
+			#five-items .five-item h3 {
+			top: 50%;
+			transform: translateY(-50%);
+			line-height: 16px !important;
+			}
+			#five-items .five-item h3 a {
+			font-size: 14px !important;
+			}
+			#five-items .flex-item:nth-child(3) .five-item {
+			border-top: 1px solid rgba(216,216,216,0.16);
+			border-bottom: 1px solid rgba(216,216,216,0.16);
+			width: 100%;
+			}
+			#five-items .flex-item:nth-child(1) .five-item,
+			#five-items .flex-item:nth-child(4) .five-item {
+			border-right: 1px solid rgba(216,216,216,0.16);
+			}
+			#news .flex-box,
+			#foundation .flex-box {
+			flex-wrap: wrap;
+			}
+			#news .flex-item,
+			#foundation .flex-item {
+			width: calc(100% - 20px) !important;
+			}
+			#stories .container > h3 {
+			font-size: 32px !important;
+			}
+			#stories .tab-pane p {
+			font-size: 28px !important;
+			}
+			}
+			@media screen and ( min-width: 1280px ) {
+			#carousel #buttons {
+			display: none !important;
+			}
+			}
+			@media screen and ( min-width: 768px ) {
+			#carousel #buttons {
+			display: block;
+			}
+			}
+			table.GeneratedTable {
+			background-color:#FFFFFF;
+			border-width:0px;
+			border-color:#336600;
+			border-style:solid;
+			color:#0000CC;
+			margin-left:auto;
+			margin-right:auto;
+			}
+			table.GeneratedTable td, table.GeneratedTable th {
+			border-width:0px;
+			padding:20px;
+			}
+			table.GeneratedTable thead {
+			background-color:#FFFFFF;
+			}
+		</style>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body lang=EN-US>
+		<header class="fixed-top">
+			<div class="container">
+				<nav id="main-header" class="navbar navbar-expand-lg navbar-dark">
+					<a href="#banner"><img id="logo-light" src="images/TFFLogo3.png"></a>
+					<a href="#banner"><img id="logo-dark" src="images/TFFLogo3.png"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown dropdown-menu-right">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdownContact" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  								Contact Us
+                </a>
+								<div class="dropdown-menu" aria-labelledby="dropdownContact">
+									<a class="dropdown-item" href="mailto:info@taffaefamilyfoundation.org?Subject=Taffae%20Family%20Foundation">info@taffaefamilyfoundation.org</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section id="banner">
+			<div class="banner-item">
+				<div class="container">
+					<h1 class="text-center">Our Mission</h1>
+					<p class="text-center">To enhance and encourage inclusion no matter one&#39;s race, color, sexual preference, gender (past, present, or future), religious beliefs, disability or country of origin.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="five-items">
+			<div class="flex-box">
+				<div class="flex-item">
+					<div class="five-item" style="background-image: url('images/0111.jpg')">
+						<h3><a href="#objective">Objective</a></h3>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="five-item" style="background-image: url('images/images3333.jpg')">
+						<h3><a href="#foundation">Family</a></h3>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="five-item" style="background-image: url('images/books.jpg')">
+						<h3><a href="#stories">Grant Request</a></h3>
+					</div>
+				</div>
+				<div class="flex-item">
+					<div class="five-item" style="background-image: url('images/blocks.jpg');">
+						<h3><a href="#trustees">Foundation</a></h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="objective">
+			<h3>Objective:</h3>
+			<div class="objective">
+				<p>
+					Our objective is to maximize resources for the greatest return in fulfilling Our Mission. Although our preference is investing in ongoing endeavors which allow for a longer-term impact. The Taffae Family Foundation is also receptive to short term actions when we believe those impacted justifies our investment.
+
+We know our mission is ambitious, but so was leaving Austria for America at 10 years old on a crowded ship that would last 12 rough weeks. We are optimists, although we may not solve or fully accomplish Our Mission in its entirety, we believe not trying is just not an option. The Foundation is grateful for any progress that may be made with our participation.
+				</p>
+			</div>
+		</section>
+
+		<hr>
+
+		<section id="foundation">
+			<h3>Family</h3>
+			<div class="foundation">
+        <div class="section-1">
+          <div class="imagesize">
+    				<figure>
+    					<img src="images/SCAN0006.JPG">
+    					<figcaption>Leon Taffae</figcaption>
+    				</figure>
+    			</div>
+    			<p>
+    				Leon Taffae (1886-1971) arrived at Ellis Island from Dembitz, Austria with his mother; his father had arrived to the United States earlier, Leon was 10 years old and would eventually become the oldest of 5 children. As a teenager, he left school to join the workforce to earn money for his family. He managed to attend night school earning a high school diploma. After two clerical jobs, Leon went to work for Bellian Coffee Importers. Misters Bellian and Taffae became great friends and after some years, the firm&#39;s name changed to Taffae & Bellian. After Mr. Bellian passed, Mr. Taffae bought the balance from Mrs. Bellian and renamed the company Leon Taffae & Co., Inc. Mr. Taffae was an active member of the Green Coffee Association and in 1964 was inducted as an Honorary  Member. He testified at the Senate Banking Committee hearings on Study of Coffee Prices. His passions included fine art, fashion, his family and his business.<br><br>
+          </p>
+        </div>
+        <div class="section-2">
+          <div class="imagesize">
+    				<figure>
+    					<img src="images/Image (25).jpg">
+    					<figcaption>L to R: Bob, Jean, & Paul</figcaption>
+    				</figure>
+    			</div>
+          <p>
+            In 1918 Leon married Sarah Klein (1891-1959) who was born in Hungary. Sarah passed from an unfortunate accident. They had three children; Jean Alice Taffae (1919-1996), Robert Charles Taffae (1922 - 2016) and Paul Martin Taffae (1923-2008). They grew up in Brooklyn, New York. <br><br>
+
+            The oldest of the three, Jean was an excellent student,
+            excelled in math and took a liking to investing in
+            the stock market. Jean was an avid bridge player and had
+            impeccable taste. Jean graduated from Adelphi College.
+          </p>
+          <div class="imagesize">
+    				<div class="imagesize4">
+    					<figure>
+    						<img src="images/Image (20).jpg">
+    						<figcaption>L to R: Leon, Sarah, Jean, Bob, & Paul</figcaption>
+    					</figure>
+    				</div>
+    			</div>
+        </div>
+        <div class="section-3">
+          <div class="imagesize">
+            <div class="imagesize5">
+      				<figure>
+      					<img src="images/Image7small.jpg">
+      					<figcaption>Bob Taffae at the office</figcaption>
+      				</figure>
+      			</div>
+          </div>
+
+          <p>
+            On September 23, 1940, she married Alexander (Alex) Batkin (1912-1982). Mr. Batkin attended Roberts University&#39s engineering school in Turkey, but his true passion was music and his wife and children. Jean and Alex had two daughters, Suzy and Nancy,<br><br>
+            which they raised in Long Island, New York. Mr. Batkin
+            set up and ran Continental Coffee (roasters) and
+            GlassJar (coffee distribution).<br>
+          </p>
+          <div class="imagesize">
+    				<div class="imagesize4">
+    					<figure>
+    						<img src="images/SCAN0005.JPG">
+    						<figcaption>Jean and Alex Batkin</figcaption>
+    					</figure>
+    				</div>
+    			</div>
+        </div>
+        <div class="section-4">
+          <p>
+            Robert (Bob) Charles Taffae (1922-2016) attended Poly Prep in Brooklyn where he wrestled and played baseball. At the age of 18, Bob volunteered to serve in the infantry (75th division) where he received the Bronze Star, Distinguished Service Cross and France's highest military decoration: the Legion of Honor Medal Chevalier. After the war, Bob attended Oxford University and graduated from Rutgers College. After graduation, Bob joined his father, Leon at the family&#39s coffee importing business. Mr. Taffae sat on the Green Coffee Association&#39s Judaification Committee and was Treasurer of the Coffee & Sugar Exchange for many years. During his retirement became a Francophile, enjoying annual trips to Southern France and Italy with his wife.<br><br>
+          </p>
+          <div class="imagesize2">
+    				<figure>
+    					<img src="images/Image (12).jpg">
+    					<figcaption>Bob and Anita in Abano Terme, Italy</figcaption>
+    				</figure>
+    			</div>
+        </div>
+        <p>
+          In 1959, Mr. Taffae married Anita Runkel (1927 - &nbsp), who had two daughters, Jessica and Joen. Ms. Runkel grew up in New York, attended the Grier School (Tyrone, PA) and Wheaton College. Anita was very active in volunteer work her entire life. Mr. and Mrs. Taffae were founding members of Temple Emanuel of Westchester. They were avid collectors of fine art. Bob was an accomplished artist.<br><br>
+
+          The Taffae and Runkel families have been close friends for over three generations. Anita&#39s father, Mortimer and Leon Taffae met when they were 15 and 19 years old. Later they worked across the street from one another, both in the coffee business. Their paths crossed often and would frequently attend each other's family outings. Mortimer would eventually become President of Sprague & Rhodes (coffee commodity traders). Anita&#39s older sister, Joan Runkel married Donald (Don) Sperling. Don eventually became President of Sprague & Rhodes. The Sperlings and Taffaes end up living in Chappaqua only a few miles apart. Don and Bob became not only brother in-laws but great friends.
+        </p>
+        <div class="section-5">
+          <div class="imagesize5">
+            <figure>
+    					<img src="images/Paul.jpg">
+    					<figcaption>Paul M. Taffae</figcaption>
+    				</figure>
+          </div>
+          <p>
+            Paul M. Taffae (1923-2008) graduated summa cum laude from Poly Prep, he did his undergraduate work at Hamilton College where he was inducted into Phi Beta Kappa and obtained his MA from Columbia University. Paul was a writer, an avid reader of English literature, and an educator. Spending several years teaching at Robert Louis Stevenson School (NYC). He served in the 75th Infantry Division during Battle of the Bulge with his brother. Was awarded the Bronze Star Medal of Valor and Combat Infantryman Badge. Paul spent his life writing, his passion lied in literature and baseball. He was literary editor at The Book of Knowledge.
+    				&nbsp &nbsp
+          </p>
+          <div class="imagesize">
+  					<figure>
+  						<img src="images/SCAN0002.JPG">
+  						<figcaption>L to R: Peter, Robert, Leon</figcaption>
+            </figure>
+  				</div>
+        </div>
+        <div class="section-6">
+          <p>
+            Peter R. Taffae (1960 - &nbsp) He grew up in Chappaqua, New York and attended Ithaca College and currently resides in Santa Monica, California. Peter is dyslexic and grew up during a time that many did not understand learning disabilities. Although, sometimes challenging, Peter believes in many ways his dyslexia was a blessing and helped to define many of the qualities he is most proud. Peter's working career has been in the insurance industry and in 2000 he established ExecutivePerils, Inc. a national insurance wholesaler specializing in Directors&#39 & Officers&#39 Liability, Employment Practices, Professional Malpractice and Cyber Insurance. With almost 40 years in the insurance industry he has earned numerous awards for innovation and he is frequently quoted in industry and national publications. Currently Peter is a trustee of Ithaca College, Atlanta Montessori Institute and board member of Meals on Wheels West.He looks forward to his next chapter leading the foundation.
+          </p>
+          <div class="imagesize">
+  					<figure>
+  						<img src="images/PRT.jpg">
+  						<figcaption>Peter R. Taffae</figcaption>
+  					</figure>
+  				</div>
+        </div>
+		</section>
+		<HR>
+		<section id="stories">
+			<div class="container text-center">
+				<h3 class="text-center">Grant Requests</h3>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="tab-panel-1" role="tabpanel" aria-labelledby="pills-tab-panel-1">
+						<p>The first step of the application process is to submit a letter of inquiry (LOI).</p>
+						<a href="images/LOI.pdf" download ><img src="images/button_loi.jpg"></a>
+						<h4> Send to: <a href="mailto:info@taffaefamilyfoundation.org?Subject=Taffae%20Family%20Foundation">info@taffaefamilyfoundation.org</a></h4>
+					</div>
+					<div class="stories">
+						<p>
+							The Taffae Family Foundation supports organizations that enhance inclusion of society's differences in ways that welcome and celebrate our differences; one of society's greatest challenges. Tax exempt 501(c)3 organizations are eligible to apply. Grants are available for general operating, project support, capacity-building, education, and capital projects. Our typical grant ranges from $10,000 to $250,000.
+							<br>
+							When evaluating organizations as potential philanthropic partners, we focus on the following criteria:
+							<br><br>
+							<b>Efficiency:</b> The Taffae Family Foundation believe we have a responsibility to invest in organizations that are efficient as possible. We generally fund those organizations that allocate at least 75% of their operating expenses directly to their constituents.
+							<br>
+							<b>Leadership:</b> The Taffae Family Foundation believes that great organizations require great leadership, we seek management that are visionary and extraordinary. We admire innovation.
+							<br>
+							<b>Outcomes:</b> Our investments are made with institutions that create long-term enhancements to Our Mission. As a result, we look at past projects and evaluate the impact. We like measurable outcomes.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<section id="trustees">
+			<h3>Taffae Family Foundation</h3>
+			<table class="GeneratedTable">
+				<thead>
+					<tr>
+						<th>Trustees</th>
+						<th>Mailing Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<b>Joseph Halpern</b><br>
+							<h2>Andover, MA</h2>
+							<b>Douglas Joseph</b><br>
+							<h2>Boise, ID</h2>
+							<b>James Schibuk</b><br>
+							<h2>Scarsdale, NY</h2>
+							<b>Ann (Runkel) Sperling</b><br>
+							<h2>Denver, CO</h2>
+							<b>Anita (Runkel) Taffae</b><br>
+							<h2>Boca Raton, FL</h2>
+							<b>Peter R. Taffae, Chair</b>
+							<h2>Santa Monica, CA</h2>
+						</td>
+						<td style="vertical-align:top">
+							Taffae Family Foundation<br>
+							Weinstock Manion, A Law Corporation<br>
+							1875 Century Park East - Ste. 2000<br>
+							Los Angeles, CA 90067<br>
+							<br><br>
+							Email<br>
+							<a href="mailto:info@taffaefamilyfoundation.org?Subject=Taffae%20Family%20Foundation">info@taffaefamilyfoundation.org</a><br><br>
+							Tax ID: 84-3061048
+						</td>
+					</tr>
+					<tr>
+						<td><b>Legal Counsel</b><br>
+							Weinstock Manion, A Law Corporation<br>
+							1875 Century Park East Ste. 2000<br>
+							Los Angeles, CA 90067<br>
+						</td>
+						<td style="vertical-align:top">
+						</td>
+					</tr>
+					<tr>
+						<td><b>Accountant</b><br>
+							Gumbiner Sauett, Inc.<br>
+							1723 Cloverfield Blvd.<br>
+							Santa Monica, CA 90404<br>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><b>Financial Institution</b><br>
+							First Republic Bank<br>
+							888 S. Figueroa Street Ste. 100<br>
+							Los Angeles, CA 90017<br>
+						</td>
+						<td></td>
+					</tr>
+          <tr class="media">
+            <td style="vertical-align:top">
+							Taffae Family Foundation<br>
+							Weinstock Manion, A Law Corporation<br>
+							1875 Century Park East - Ste. 2000<br>
+							Los Angeles, CA 90067<br>
+							<br><br>
+							Email<br>
+							<a href="mailto:info@taffaefamilyfoundation.org?Subject=Taffae%20Family%20Foundation">info@taffaefamilyfoundation.org</a><br><br>
+							Tax ID: 84-3061048
+						</td>
+          </tr>
+				</tbody>
+			</table>
+		</section>
+		<footer id="fp-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 order-xl-2 text-center">
+						<div class="title">
+							<p><a href="#banner"><img alt="" src="images/TFFLogo3.png"></a></p>
+						</div>
+					</div>
+					<div class="col-xl-4 order-xl-1">
+						<p class="d-none d-xl-block">Taffae Family Foundation</p>
+						<p>Weinstock Manion, A Law Corporation</p>
+						<p>1875 Century Park East Ste. 2000</p>
+						<p>Los Angeles, CA 90067</p>
+					</div>
+					<div class="col-xl-4 order-xl-3 text-right">
+						<ul>
+							<li><a href="mailto:info@taffaefamilyfoundation.org?Subject=Taffae%20Family%20Foundation">info@taffaefamilyfoundation.org</a></li>
+							<li>Tax ID: 84-3061048</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-9">
+							<p>&copy; 2019 Taffae Family Foundation. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function(e) {
+				$('#five-items .five-item a').on('click', function(e) {
+					e.preventDefault();
+					console.log(this);
+					let id = this.attributes.href.nodeValue;
+					$('html, body').animate({
+											scrollTop: $(id).offset().top - 140
+									}, 1000);
+				});
+			});
+
+		</script>
+		<script type="text/javascript">
+			function toggleDropdown (e) {
+				const _d = $(e.target).closest('.dropdown'),
+				_m = $('.dropdown-menu', _d);
+				setTimeout(function(){
+					const shouldOpen = e.type !== 'click' && _d.is(':hover');
+					_m.toggleClass('show', shouldOpen);
+					_d.toggleClass('show', shouldOpen);
+					$('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+				}, e.type === 'mouseleave' ? 100 : 0);
+			}
+
+			jQuery(document).ready(function($){
+				$('body')
+					.on('mouseenter mouseleave','.dropdown',toggleDropdown)
+					.on('click', '.dropdown-menu a', toggleDropdown);
+
+				$(window).on('scroll', function(e) {
+					if( $(this).scrollTop() >= 50 ) {
+						$('header').addClass('active');
+					} else {
+						$('header').removeClass('active');
+					}
+				}).trigger('scroll');
+
+				new Swiper ('.swiper-container', {
+					// Optional parameters
+					loop: false,
+
+					// If we need pagination
+					pagination: {
+						el: '.swiper-pagination',
+					},
+
+					// Navigation arrows
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+
+					// And if we need scrollbar
+					scrollbar: {
+						el: '.swiper-scrollbar',
+					},
+
+					breakpoints: {
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 7.5,
+						},
+						768: {
+							slidesPerView: 3,
+							spaceBetween: 7.5,
+						},
+						1280: {
+							slidesPerView: 4,
+							spaceBetween: 7.5,
+						},
+					}
+				})
+
+
+			});
+
+
+
+		</script>
+	</body>
+</html>
